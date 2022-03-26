@@ -31,7 +31,7 @@ all=${suffix}${path}.${type}
 if [ -z "$path" ]; then
     echo 'ファイル名が不明です。'
     exit 1
-else if [ -e $all ]; then
+elif [ -e $all ]; then
     echo 'ファイルが重複しています。再度お試しください。'
     exit 1
 fi
