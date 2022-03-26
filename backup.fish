@@ -1,9 +1,9 @@
 #!/usr/bin/env fish
 
 function __compress
-    set suffix (date +%Y-%m-%d-%H%M%S)
+    set prefix (date +%Y-%m-%d-%H%M%S)
     set file $argv[2]
-    set all {$suffix}{$file}.{$argv[1]}
+    set all {$prefix}{$file}.{$argv[1]}
     echo $all
     if test -z {$file}
         echo 'function:compress ファイル名が不明です。'
