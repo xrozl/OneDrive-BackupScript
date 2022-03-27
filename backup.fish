@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#/usr/bin/env fish
 
 function __compress
     set prefix (date +%Y-%m-%d-%H%M%S)
