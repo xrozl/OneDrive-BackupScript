@@ -38,7 +38,7 @@ fi
 echo "ファイル名を$allに設定しました。"
 case $type in
     'zip')
-        zip -r $all ./ -x "*backup.fish*"
+        zip -r $all ./ -x "*backup.sh*"
         ;;
     *)
         echo '圧縮タイプが不明です。'
